@@ -26,7 +26,7 @@ const CTAButton = ({ className = "", showIcon = true }: { className?: string, sh
       whileTap={{ scale: 0.95 }}
       className={`bg-[#ff7e00] hover:bg-[#ff8e1a] text-white font-black py-4 px-6 rounded-2xl shadow-[0_10px_20px_-5px_rgba(255,126,0,0.4)] transition-all text-lg md:text-xl flex items-center justify-center gap-2 w-full md:w-auto cursor-pointer border-b-4 border-[#cc6500] active:border-b-0 active:translate-y-1 no-underline ${className}`}
     >
-      ¡ACCEDER AHORA POR $9.90!
+      ¡ACCEDER AHORA!
       {showIcon && <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />}
     </motion.a>
   );
@@ -103,9 +103,8 @@ export default function App() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute -top-4 -right-2 md:-top-6 md:-right-6 bg-orange-500 text-white p-3 md:p-5 rounded-3xl shadow-xl transform rotate-6 border-4 border-white flex flex-col items-center">
-                <p className="text-[10px] md:text-xs font-bold uppercase tracking-tighter opacity-80">Solo Hoy</p>
-                <p className="text-xl md:text-3xl font-black leading-none">$9.90</p>
-                <p className="text-[10px] md:text-xs font-bold uppercase tracking-tighter opacity-80">USD</p>
+                <p className="text-[10px] md:text-xs font-black uppercase tracking-tighter">Acceso</p>
+                <p className="text-xl md:text-3xl font-black leading-none">Inmediato</p>
               </div>
             </div>
             
@@ -285,15 +284,9 @@ export default function App() {
           <h2 className="text-4xl md:text-7xl font-black leading-none">¿Listo para el cambio?</h2>
           
           <div className="bg-white/5 backdrop-blur-2xl p-8 md:p-16 rounded-[3rem] border border-white/10 shadow-[0_50px_100px_-20px_rgba(34,197,94,0.15)]">
-            <div className="space-y-4 mb-10 md:mb-14">
-              <p className="text-slate-500 line-through text-2xl font-black opacity-50">VALOR REAL: $47 USD</p>
-              <div className="flex items-center justify-center gap-4">
-                <span className="text-7xl md:text-[10rem] font-black text-white leading-none tracking-tighter">$9.90</span>
-                <div className="flex flex-col items-start gap-1">
-                  <span className="text-2xl font-black bg-green-500 text-slate-900 px-3 py-1 rounded-xl">USD</span>
-                  <span className="text-xs font-bold uppercase text-slate-400 tracking-widest text-left">Pago<br/>único</span>
-                </div>
-              </div>
+            <div className="space-y-4 mb-10 md:mb-14 text-center">
+              <h3 className="text-3xl md:text-5xl font-black text-white">Oferta Especial de Lanzamiento</h3>
+              <p className="text-green-400 font-bold text-sm md:text-lg">Un solo pago. Sin suscripciones.</p>
             </div>
             
             <div className="flex flex-col items-center gap-4">
